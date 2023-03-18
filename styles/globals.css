@@ -4,6 +4,11 @@
 
 @layer base {
     body {
-        @apply bg-[#000300] text-[#1f2937] tracking-wide
+        /* F8F7E8 is mascarpone white color
+         */
+        @apply bg-[#F8F7E8] text-[#1f2937] tracking-wide
+    }
+    h1,h2,h3,h4,h5,h6{
+        @apply font-bold
     }
 }
