@@ -6,7 +6,7 @@ import Link from "next/link";
 const Navbar = ()=>{
     const [sidebar,setSidebar] = useState(false);
 
-    const toggleSidebar = ()=>{
+    const toggleSidebar = ()=> {
         setSidebar(!sidebar);
     }
     return (
