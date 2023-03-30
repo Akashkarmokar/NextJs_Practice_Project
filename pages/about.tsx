@@ -19,7 +19,7 @@ const about = ()=>{
                 </div>
             </div>
             <div className="basis-[65%]">
-                <div>
+                <div className="mr-10">
                     <h3>Project Name: selected option is :{selectedOptions}</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nobis aut harum quasi deserunt architecto impedit, totam reiciendis facilis? Enim inventore quis laboriosam atque velit? Ipsum, animi suscipit ex incidunt placeat molestiae officiis, eligendi odio vitae quo consectetur nisi impedit architecto sapiente voluptatem eum fugiat a. Ipsa rem corporis fuga?</p>
                 </div>
