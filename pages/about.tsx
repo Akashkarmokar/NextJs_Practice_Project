@@ -1,9 +1,5 @@
 import { useState } from "react"
 
-interface OptionMap {
-    [key:string] : JSX.Element
-}
-
 
 const about = ()=>{
     const [selectedOptions,setSelectedOptions] = useState('skills'); //by default it is skills
@@ -119,36 +115,29 @@ const about = ()=>{
         </div>
     )
 
-    const projectSection = (
-        <div>
-            <p>Hello project</p>
-        </div>
-    );
-
-    const checkSelectedOption = ()=>{
-        
-        const selOption:string = selectedOptions;
-        const optionMap:OptionMap = {
-            'skills': skillsSection,
-            'experiences': experienceSection,
-            'projects': projectSection 
-        }
-        return optionMap[selOption];
+    const handleSelectionBar = (e:any)=>{
+        let value = e.target.value;
+        setSelectedOptions(value);
     }
+
     return (
-        <div className="max-w-[1320px] mx-10 py-[10%] md:py-[80] flex mx-auto space-x-11">
-            <div className="basis-[35%]  flex items-center justify-center flex-col fix">
-                {/* <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem autem accusamus saepe nihil voluptates error commodi incidunt voluptas sequi, rem sed, possimus dicta quos optio non quia facilis, quae magnam!
-                </p> */}
+        <div className="max-w-[1320px] mx-10 py-[10%] md:py-[80] flex flex-col mx-auto space-x-11 sm:flex-row">
+            <div className="sm:hidden flex items-center justify-center my-5">
+                <select className="rounded-lg rounded-gray-900 w-3/5 h-10 bg-gray-900 text-white text-center " defaultValue="skills" onChange={handleSelectionBar}>
+                    <option value="skills" className="w-3/5 h-10">Skills</option>
+                    <option value="experiences" className="w-3/5 h-10">Experiences</option>
+                </select>
+            </div>
+            <div className="hidden basis-[35%]  sm:flex items-center justify-center flex-col fix">
                 <div className="px-5 py-5 w-3/5 rounded-lg">
-                    <button className="block px-2 min-w-4/5 my- border border-green-900 hover:bg-green-900 hover:text-white rounded-full my-3" value="skills" onClick={handleSelectedOptions}>Skills</button>
+                    <button className="active acblock px-2 min-w-4/5 my- border border-green-900 hover:bg-green-900 hover:text-white rounded-full my-3" value="skills" onClick={handleSelectedOptions}>Skills</button>
                     <button className="block px-2 min-w-4/5 my- border border-green-900 hover:bg-green-900 hover:text-white rounded-full my-3" value="experiences" onClick={handleSelectedOptions}>Experiences</button>
-                    <button className="block px-2 min-w-4/5 my- border border-green-900 hover:bg-green-900 hover:text-white rounded-full my-3" value="projects" onClick={handleSelectedOptions}>Projects</button>
+                    <button className="hidden block px-2 min-w-4/5 my- border border-green-900 hover:bg-green-900 hover:text-white rounded-full my-3" value="projects" onClick={handleSelectedOptions}>Projects</button>
                 </div>
             </div>
             <div className="basis-[65%]">
-                {/* { selectedOptions === 'skills' ? experienceSection : skillsSection } */}
-                { checkSelectedOption() }
+                { selectedOptions === 'skills' ? skillsSection : experienceSection  }
+                {/* { checkSelectedOption() } */}
             </div>
         </div>
     )

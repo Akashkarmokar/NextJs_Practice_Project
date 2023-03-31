@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import Typed from 'react-typed'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,7 +23,7 @@ export default function Home() {
           className={'text-[#00df9a] font-semibold'}
         />
         <br />
-        <button className="my-1 px-4 py-1 border border-purple-500 rounded-full text-sm text-purple-600 font-semibold">More</button>
+        <Link href="/about"><button className="my-1 px-4 py-1 border border-purple-500 rounded-full text-sm text-purple-600 font-semibold">More</button> </Link>
       </div>
     </div>
   )
