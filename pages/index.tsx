@@ -18,19 +18,19 @@ export default function Home() {
           <Link href="https://dev.to/akashcsemu" className='mx-2' target="_blank"><Image src="/images/dev.png" alt='Dev Community' width={20} height={30} /></Link>
         </div>
       </div>
-      <div className='text-center'>
+      <div className='text-center flex items-center justify-center flex-col'>
         <p className='font-bold text-4xl'>Akash Karmokar</p>
         <p>Software Engineer</p>
-        <p>Who love </p>
+        <p className='w-2/4'>A Programming enthusiast who love to work by lean to build system and experienced on</p>
         <Typed 
           strings={['React.js','Next.js','Express.js','Nest.Js','PostgreSQL']}
           typeSpeed={100}
           backSpeed={150}
           loop={true}
-          className={'text-[#00df9a] font-semibold'}
+          className={'text-[#00df9a] font-semibold mt-1'}
         />
         <br />
-        <Link href="/about"><button className="my-1 px-4 py-1 border border-purple-500 rounded-full text-sm text-purple-600 font-semibold">More</button> </Link>
+        <Link href="/about"><button className="my-1 px-2 py-1 border border-purple-500 rounded-full text-sm text-purple-600 font-semibold">More</button> </Link>
       </div>
     </div>
   )
