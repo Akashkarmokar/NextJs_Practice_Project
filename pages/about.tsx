@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 
-const about = ()=>{
+const About = ()=>{
     const [selectedOptions,setSelectedOptions] = useState('skills'); //by default it is skills
     
     const handleSelectedOptions = (e:any)=>{
@@ -143,4 +143,4 @@ const about = ()=>{
     )
 }
 
-export default about
+export default About

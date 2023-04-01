@@ -4,7 +4,7 @@ import Typed from 'react-typed'
 import Link from 'next/link'
 import Image from 'next/image'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] })  
 
 export default function Home() {
   return (
