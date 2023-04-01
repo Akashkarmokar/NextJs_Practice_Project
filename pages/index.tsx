@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import Typed from 'react-typed'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -10,6 +11,12 @@ export default function Home() {
     <div className="h-screen flex items-center justify-center flex-col sm:flex-row">
       <div className='m-4'>
         <img src="/images/ak.jpg" alt="Akash" className='h-60 mx-auto rounded-full ring-4 ring-[#00df9a]' />
+        <div className='flex items-center justify-center my-5 '>
+          <Link href="https://github.com/akashkarmokar" className='mx-2' target="_blank"><Image src="/images/github.png" alt='Github' width={20} height={45} /></Link>
+          <Link href="https://www.linkedin.com/in/akashcsemu/" className='mx-2' target="_blank"><Image src="/images/linkedin.png" alt='LinkedIn' width={20} height={50} /></Link>
+          <Link href="https://codeforces.com/profile/Mr__Akash" className='mx-2' target="_blank"><Image src="/images/codeforces.png" alt='Codeforces' width={25} height={55} /></Link>
+          <Link href="https://dev.to/akashcsemu" className='mx-2' target="_blank"><Image src="/images/dev.png" alt='Dev Community' width={20} height={30} /></Link>
+        </div>
       </div>
       <div className='text-center'>
         <p className='font-bold text-4xl'>Akash Karmokar</p>
