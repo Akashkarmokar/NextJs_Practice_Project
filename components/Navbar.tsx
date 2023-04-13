@@ -10,7 +10,7 @@ const Navbar = ()=>{
         setSidebar(!sidebar);
     }
     return (
-        <div className="flex justify-between items-center h-20 max-w-[1240px] mx-auto my-2 px-4 text-white rounded-lg bg-gray-900">
+        <div className="sticky -top-1 flex justify-between items-center h-20 max-w-[1240px] mx-auto my-2 px-4 text-white rounded-lg bg-gray-900">
             <h1 className="w-full text-3xl text-[#00df9a]">Ak.</h1>
             <ul className="hidden md:flex text-white  uppercase">
                 <Link href='/'><li className="p-4">Home</li></Link>
