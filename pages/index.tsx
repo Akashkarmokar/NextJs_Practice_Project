@@ -21,7 +21,7 @@ export default function Home() {
       <div className='text-center flex items-center justify-center flex-col'>
         <p className='font-bold text-4xl'>Akash Karmokar</p>
         <p>Software Engineer</p>
-        <p className='w-2/4'>A Programming enthusiast who love to work by lean to build system and experienced on</p>
+        <p className='w-2/4'>A Programming enthusiast who love to work by learn to build system and experienced on</p>
         <Typed 
           strings={['React.js','Next.js','Express.js','Nest.Js','PostgreSQL']}
           typeSpeed={100}

@@ -78,7 +78,7 @@ const About = ()=>{
                     <h3>What I do:</h3>
                     <div className="mx-5">
                         <ul className="mx-2 list-disc">
-                            <li>Working on GraphQL API</li>
+                            <li>Working on GraphQL server</li>
                             <li>Building new featuress</li>
                         </ul>
                     </div>
@@ -104,7 +104,7 @@ const About = ()=>{
                     <h3>What I did:</h3>
                     <div className="mx-5">
                         <ul className="mx-2 list-disc">
-                            <li className="font-light">Worked on REST API</li>
+                            <li className="font-light">Worked on REST server</li>
                             <li className="font-light">Build a HRM system for existing Vendor Management System</li>
                             <li className="font-light">Identify various bugs and solved them with proper optimization</li>
                             <li className="font-light">Implement design pattern to build new features on the existing API</li>
