@@ -27,10 +27,11 @@ export default function Home() {
           typeSpeed={100}
           backSpeed={150}
           loop={true}
-          className={'text-[#00df9a] font-semibold mt-1'}
+          className={'text-purple-600 font-semibold mt-1'}
+          text-purple-600
         />
         <br />
-        <Link href="/about"><button className="my-1 px-2 py-1 border border-purple-500 rounded-full text-sm text-purple-600 font-semibold">More</button> </Link>
+        <Link href="/about"><button className="my-1 px-2 py-1 border border-[#00df9a] rounded-full text-sm text-[#00df9a] font-semibold">More</button> </Link>
       </div>
     </div>
   )
