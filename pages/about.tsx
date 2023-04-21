@@ -121,7 +121,7 @@ const About = ()=>{
     }
 
     return (
-        <div className="max-w-[1320px] mx-10 py-[10%] md:py-[80] flex flex-col mx-auto space-x-11 sm:flex-row">
+        <div className="max-w-[1320px] mx-10 py-[10%] md:py-[80] flex flex-col mx-auto space-x-11 sm:flex-row sm:items-start">
             <div className="sm:hidden flex items-center justify-center my-5">
                 <select className="rounded-lg rounded-gray-900 w-3/5 h-10 bg-gray-900 text-white text-center " defaultValue="skills" onChange={handleSelectionBar}>
                     <option value="skills" className="w-3/5 h-10">Skills</option>
